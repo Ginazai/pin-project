@@ -1,9 +1,17 @@
 body {
 /*	background: rgb(147,92,255);
 	background: linear-gradient(180deg, rgba(147,92,255,1) 0%, rgba(221,22,255,1) 25%, rgba(147,92,255,1) 75%, rgba(255,50,195,1) 100%);*/
-	background: rgb(113,44,249);
-	background: linear-gradient(90deg, rgba(113,44,249,1) 0%, rgba(113,44,249,0.5) 100%);
+	
+	/*purple variant 1*/
+	/*background: rgb(113,44,249);
+	background: linear-gradient(90deg, rgba(113,44,249,1) 0%, rgba(113,44,249,0.5) 100%);*/
 	font-family: 'Comfortaa', cursive;
+	/*orange variant 1*/
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(255,168,45,1) 100%);
+	/*orange variant 2*/
+/*	background: rgb(249,116,44);
+	background: linear-gradient(90deg, rgba(249,116,44,1) 25%, rgba(209,20,208,1) 100%);*/
 }
 
 .glass {
