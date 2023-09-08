@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" sizes="70x70" href="images/logo.png">
     <title>Pin.it</title>
     <script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
@@ -15,9 +16,12 @@
   </head>
   <body class="overflow-x-hidden" style="color:white;">
 
-    <div class="glass position-absolute" style="width: 109px; height: 191px; top: 100px; left: 175px; transform: rotate(0.75turn); opacity: 0.260238;"></div>
-    <div class="glass position-absolute" style="width: 109px; height: 191px; top: 150px; left: 32px; transform: rotate(0.1turn); opacity: 0.260238;"></div>
-    <div class="glass position-absolute" style="width: 309px; height: 591px; top: 130px; left: 100px; transform: rotate(0.8953turn); opacity: 0.260238;"></div>
+    <div id="glass-piece-1" class="glass position-absolute" style="width: 109px; height: 191px; top: 100px; left: 175px; transform: rotate(0.75turn); opacity: 0.260238;"></div>
+    <div id="glass-piece-2" class="glass position-absolute" style="width: 109px; height: 191px; top: 200px; left: 32px; transform: rotate(0.1turn); opacity: 0.260238;"></div>
+    <div id="glass-piece-3" class="glass position-absolute" style="width: 109px; height: 191px; top: 350px; left: 32px; transform: rotate(0.3turn); opacity: 0.260238;"></div>
+    <div id="glass-piece-4" class="glass position-absolute" style="width: 200px; height: 400px; top: 500px; left: 75px; transform: rotate(0.8953turn); opacity: 0.260238;"></div>
+    <div id="glass-piece-5" class="glass position-absolute" style="width: 200px; height: 800px; top: 400px; right: 300px; transform: rotate(0.65turn); opacity: 0.260238;"></div>
+    <div id="glass-piece-6" class="glass position-absolute" style="width: 200px; height: 800px; top: 400px; left: 300px; transform: rotate(0.75turn); opacity: 0.260238;"></div>
  <!--    <div class="glass position-absolute" style="width: 159px; height: 241px; top: 50px; left: 32px; transform: rotate(0turn); opacity: 0.260238;"></div>
     <div class="glass position-absolute" style="width: 109px; height: 191px; top: 0px; left: 60px; transform: rotate(0.8turn); opacity: 0.260238;"></div>
     <div class="glass position-absolute" style="width: 443px; height: 691px; top: 0px; right: 0px; transform: rotate(0.3turn); opacity: 0.260238;"></div>
@@ -50,7 +54,7 @@
               <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Pins
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu shadow">
                 <li><a class="dropdown-item" href="#">...</a></li>
                 <li><a class="dropdown-item" href="#">...</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -62,7 +66,7 @@
               <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Stickers
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu shadow">
                 <li><a class="dropdown-item" href="#">...</a></li>
                 <li><a class="dropdown-item" href="#">...</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -114,15 +118,17 @@
 <!----------------------------------------------------- Seccion 1 --------------------------------------------------->
 <div class="container-fluid glass my-3 p-3 rounded-0">
 <!--------------------- noticias seccion ----------------------->
- <h2 class="featurette-heading m-3">Pins</h2>
+ <h2 class="featurette-heading m-3">Featured</h2>
 <hr class="featurette-divider">
 <!---------------------------- carousel -------------------------------->
 <div id="carousel-noticias" class="carousel slide" data-bs-ride="carousel">
-<div class="carousel-indicators justify-content-end">
-    <button type="button" data-bs-target="#carousel-noticias" data-bs-slide-to="0" class="bg-secondary noticias-indicador" aria-label="Slide0"></button><button type="button" data-bs-target="#carousel-noticias" data-bs-slide-to="1" class="bg-secondary noticias-indicador active" aria-label="Slide1" aria-current="true"></button><button type="button" data-bs-target="#carousel-noticias" data-bs-slide-to="2" class="bg-secondary noticias-indicador" aria-label="Slide2"></button>
+<div class="carousel-indicators pins-carousel-indicators justify-content-end">
+    <button type="button" data-bs-target="#carousel-noticias" data-bs-slide-to="0" class="bg-secondary noticias-indicador active" aria-label="Slide0"></button>
+    <button type="button" data-bs-target="#carousel-noticias" data-bs-slide-to="1" class="bg-secondary noticias-indicador" aria-label="Slide1" aria-current="true"></button>
+    <button type="button" data-bs-target="#carousel-noticias" data-bs-slide-to="2" class="bg-secondary noticias-indicador" aria-label="Slide2"></button>
  </div>
   <div class="carousel-inner">
-<div class="carousel-item noticias-carousel-item">
+<div class="carousel-item pin-carousel-item active">
     <!-------------------- Featurette -------------------------->
 <div class="row featurette">
   <div class="col-md-7 order-md-2">
@@ -135,7 +141,7 @@
   </div>
 </div>
 </div>
-<div class="carousel-item noticias-carousel-item active">
+<div class="carousel-item pin-carousel-item">
     <!-------------------- Featurette -------------------------->
 <div class="row featurette">
   <div class="col-md-7 order-md-2">
@@ -148,7 +154,7 @@
   </div>
 </div>
 </div>
-<div class="carousel-item noticias-carousel-item">
+<div class="carousel-item pin-carousel-item">
     <!-------------------- Featurette -------------------------->
 <div class="row featurette">
   <div class="col-md-7 order-md-2">
@@ -178,10 +184,10 @@
 <!----------------------------------------------------- Seccion 1 --------------------------------------------------->
 
 <!---------------------------------------------- Footer ---------------------------------------------------->
-    <footer id="my-footer" class="bd-footer pb-2 bg-transparent text-center">
+    <footer id="my-footer" class="pb-2 bg-transparent">
       <div class="container">
         <hr>
-        <div class="row pb-2">
+        <div class="row text-center pb-2">
         <div class="col-12">
           <p class="text-center my-0">&copy Copyright 2023 <b>Pin.it</b> &bull; All rights reserved.</p>
         </div>
