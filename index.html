@@ -75,8 +75,8 @@
             </li>
 
             <li class="ms-auto">
-              <button class="text-light btn glass rounded-2 float-end" type="submit" data-bs-toggle="modal" data-bs-target="#sign-modal">Registrarse</button>
-              <button class="text-light btn glass rounded-2 float-end mx-2" type="submit" data-bs-toggle="modal" data-bs-target="#log-modal">Ingresar</button>
+              <button class="text-light btn glass rounded-2 float-end" type="submit" data-bs-toggle="modal" data-bs-target="#sign-modal">Register</button>
+              <button class="text-light btn glass rounded-2 float-end mx-2" type="submit" data-bs-toggle="modal" data-bs-target="#log-modal">Log in</button>
             </li>
             </li>
           </ul>
@@ -133,7 +133,7 @@
 <div class="row featurette">
   <div class="col-md-7 order-md-2">
     <h2 class="featurette-heading">Pin 1</h2>
-    <p class="lead">Categoria: blah, blah, blah</p> 
+    <p class="lead">Category: blah, blah, blah</p> 
   </div>
   <div class="col-md-5 order-md-1">
     <!-- <img class="rounded-circle" src=" images/Manufacturing_iStock-1276638149.jpg" height="400" width="500"> -->
@@ -146,7 +146,7 @@
 <div class="row featurette">
   <div class="col-md-7 order-md-2">
     <h2 class="featurette-heading">Pin 2</h2>
-    <p class="lead">Categoria: blah</p> 
+    <p class="lead">Category: blah</p> 
   </div>
   <div class="col-md-5 order-md-1">
     <!-- <img class="rounded-circle" src=" images/Manufacturing_iStock-1276638149.jpg" height="400" width="500"> -->
@@ -159,7 +159,7 @@
 <div class="row featurette">
   <div class="col-md-7 order-md-2">
     <h2 class="featurette-heading">Pin 3</h2>
-    <p class="lead">Categoria: blah, blah</p> 
+    <p class="lead">Category: blah, blah</p> 
   </div>
   <div class="col-md-5 order-md-1">
       <!-- <img class="rounded-circle" src=" images/Manufacturing_iStock-1276638149.jpg" height="400" width="500"> -->
@@ -207,7 +207,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content glass">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="modal-label">Registrate</h1>
+        <h1 class="modal-title fs-5" id="modal-label">Register</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -217,12 +217,12 @@
 
   <div class="col-12 form-floating">
     <input id="inputName" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
-    <label for="inputName" class="text-dark">Nombre</label>
+    <label for="inputName" class="text-dark">Name</label>
   </div>
 
   <div class="col-12 form-floating">
     <input id="inputLastname" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
-    <label for="inputLastname" class="text-dark">Apellido</label>
+    <label for="inputLastname" class="text-dark">Password</label>
   </div>
 
   <div class="input-group">
@@ -242,7 +242,12 @@
 
   <div class="col-12 form-floating">
     <input type="password" class="form-control" placeholder="Contraseña" id="inputPassword">
-    <label for="inputPassword" class="text-dark">Cree una contraseña</label>
+    <label for="inputPassword" class="text-dark">Create Password</label>
+  </div>
+
+  <div class="col-12 form-floating">
+    <input type="password" class="form-control" placeholder="Contraseña" id="confirm-password">
+    <label for="confirm-password" class="text-dark">Confirm Password</label>
   </div>
 </form>
 
@@ -250,8 +255,8 @@
   </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="text-light btn glass rounded-2" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="text-light btn glass rounded-2">Registrarse</button>
+        <button type="button" class="text-light btn glass rounded-2" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="text-light btn glass rounded-2">Register</button>
       </div>
     </div>
   </div>
@@ -263,7 +268,7 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content glass">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="label">Ingresar</h1>
+        <h1 class="modal-title fs-5" id="label">Log in</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -277,7 +282,7 @@
 
     <div class="form-floating">
       <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword" class="text-dark">Contraseña</label>
+      <label for="floatingPassword" class="text-dark">Password</label>
     </div>
 
  <!--    <div class="checkbox mb-3">
@@ -291,8 +296,8 @@
     </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="text-light btn glass rounded-2" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="text-light btn glass rounded-2">Ingresar</button>
+        <button type="button" class="text-light btn glass rounded-2" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="text-light btn glass rounded-2">Log in</button>
       </div>
     </div>
   </div>
