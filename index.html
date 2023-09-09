@@ -137,7 +137,7 @@
   </div>
   <div class="col-md-5 order-md-1">
     <!-- <img class="rounded-circle" src=" images/Manufacturing_iStock-1276638149.jpg" height="400" width="500"> -->
-    <svg class="rounded-circle" width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="400" height="400" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+    <svg class="rounded-circle" width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="400" height="400" fill="rgba(255, 255, 255, .5)"></rect><text x="50%" y="50%" fill="rgba(255, 255, 255, .5)" dy=".3em">First slide</text></svg>
   </div>
 </div>
 </div>
@@ -150,7 +150,7 @@
   </div>
   <div class="col-md-5 order-md-1">
     <!-- <img class="rounded-circle" src=" images/Manufacturing_iStock-1276638149.jpg" height="400" width="500"> -->
-    <svg class="rounded-circle" width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="400" height="400" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+    <svg class="rounded-circle" width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="400" height="400" fill="rgba(255, 255, 255, .5)"></rect><text x="50%" y="50%" fill="rgba(255, 255, 255, .5)" dy=".3em">First slide</text></svg>
   </div>
 </div>
 </div>
@@ -163,7 +163,7 @@
   </div>
   <div class="col-md-5 order-md-1">
       <!-- <img class="rounded-circle" src=" images/Manufacturing_iStock-1276638149.jpg" height="400" width="500"> -->
-     <svg class="rounded-circle" width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="400" height="400" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+     <svg class="rounded-circle" width="400" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="400" height="400" fill="rgba(255, 255, 255, .5)"></rect><text x="50%" y="50%" fill="rgba(255, 255, 255, .5)" dy=".3em">First slide</text></svg>
   </div>
 </div>
 </div>
@@ -225,7 +225,12 @@
     <label for="inputLastname" class="text-dark">Apellido</label>
   </div>
 
-  <div class="col-12 form-floating">
+  <div class="input-group">
+    <span class="input-group-text" id="sign-user">@</span>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="sign-user">
+  </div>
+
+<!--   <div class="col-12 form-floating">
     <input type="email" class="form-control" placeholder="correo@ejemplo.com" id="inputEmail">
     <label for="inputEmail" class="text-dark">Correo electronico</label>
   </div>
@@ -233,7 +238,7 @@
   <div class="col-12 form-floating">
     <input type="email" class="form-control" placeholder="correo@ejemplo.com" id="email-confirm">
     <label for="email-confirm" class="text-dark">Confirme su correo electronico</label>
-  </div>
+  </div> -->
 
   <div class="col-12 form-floating">
     <input type="password" class="form-control" placeholder="Contraseña" id="inputPassword">
@@ -265,22 +270,23 @@
                 <div class="form-signin justify-content-center container-fluid">
       <form class="row g-3">
 
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput" class="text-dark">Correo electronico</label>
+    <div class="input-group">
+      <span class="input-group-text" id="log-user">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="log-user">
     </div>
+
     <div class="form-floating">
       <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
       <label for="floatingPassword" class="text-dark">Contraseña</label>
     </div>
 
-    <div class="checkbox mb-3">
+ <!--    <div class="checkbox mb-3">
       <label>
         <input type="checkbox" value="remember-me"> Recordarme</label>
-    </div>
-    <p>
+    </div> -->
+<!--     <p>
       <a>olvidaste tu contraseña?</a>
-    </p>
+    </p> -->
   </form>
     </div>
       </div>
